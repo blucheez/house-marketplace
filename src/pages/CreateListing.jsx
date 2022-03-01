@@ -92,7 +92,7 @@ function CreateListing() {
 
     if (geolocationEnabled) {
       const response = await fetch(
-        `http://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITIONSTACK_KEY}&query=${address}`
+        `https://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITIONSTACK_KEY}&query=${address}`
       )
 
       const data = await response.json()
